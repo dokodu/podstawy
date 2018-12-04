@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Robal 2 (JavaScript tablice i kanwa)</title>
+    <script src="tablice-2d.js"></script>
+    <script src="kanwa.js"></script>
+    <script src="animacja.js"></script>
+</head>
+
+<body onkeydown="return wyznaczKierunek(event)">
+    <h3>Zasady gry</h3>
+    <ol>
+        <li>Zaczynamy grę z robalem 3 segmentowym idącym od środka kanwy w prawo.</li>
+        <li>Każde naciśnięcie klawisza wydłuża robala o dodatkowy segment.</li>
+        <li>Sterujemy kierunkiem ruchu robala naciskając strzałki lub klawisze: W, S, A, D.</li>
+        <li>Za każdym krokiem z maym prawdopodobieństwem pojawia się w losowym punkcie przeszkoda.</li>
+        <li>Robal nie może wejść na ścianę, przeszkodę i na siebie, wtedy się blokuje.</li>
+        <li>Zablokowanego robala możemy skierować w innym kierunku.</li>
+        <li>Gra kończy się, gdy każdy kierunek jest zablokowany.</li>
+        <li>Graj by uzyskać jak największą długość robala.</li>
+        <li>Nowa gra - klawisz F5 :) </li>
+        <li>Powodzenia!</li>
+    </ol>
+
+    <hr>
+    <button onclick="animujRobala2D()">Start gry!</button>
+    Wynik:
+    <input type="text" id="wynik" value="0" style="background-color:yellow;" readonly/>
+    <button onclick="wstrzymajGre()">Wstrzymaj grę</button>
+   
+    <br/>
+    <br/>
+    <canvas id="kanwa" width="800" height="400" style="background-color: silver;"></canvas>
+    <script>
+        inicjujKanwe();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Akademia programowania UMCS 2018 - Zadanie 1 – “Święto kwitnącej fasoli”</title>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h3>Akademia programowania UMCS 2018 - Zadanie 1 – “Święto kwitnącej fasoli”</h3>
+    <i>Zadanie sprowadza się do zliczania liter łacińskich bez względu na ich wielkość a następnie wyświetlenia rozdzielonych
+        spacją najczęściej i najrzadziej występującej litery (w postaci małej litery).</i>
+    <br> Kod programu w JavaScript i C++ jest napisany tak, by był:
+    <ul>
+        <li> testowalny</li>
+        <li> czytelny, z podziałem odpowiedzialności między funkcje</li>
+        <li> bardzo podobny w zapisie w C++ i JavaScript.</li>
+    </ul>
+    <b>W praktycznym programowaniu ważniejsza jest zazwyczaj czytelność kodu niż skrócenie jego wykonywania o kolejne milisekundy.</b>
+    <br/>
+    <br/> Kod programu:
+    <ul>
+        <li>C++:
+            <a href="https://github.com/dokodu/dokodu.github.io/blob/master/projekty/akademia-programowania/umcs-2018/zadanie-1-swieto-kwitnacej-fasoli/main.cpp">main.cpp</a>
+        </li>
+        <li>JavaScript:
+            <a href="https://github.com/dokodu/dokodu.github.io/blob/master/projekty/akademia-programowania/umcs-2018/zadanie-1-swieto-kwitnacej-fasoli/main.js">main.js</a>
+        </li>
+    </ul>
+    <hr>
+    <button onclick="runAllTests()">Start testow!</button>
+    <br> Sprawdz wyniki na konsoli (F12)
+    <br/>
+    <hr>
+    <textarea id="inputText" style="width:50%" rows="5">Jedzie, jedzie Mazureczek,
+Wiezie, wiezie moj wianeczek,
+rozmarynowy.</textarea>
+    <br>
+    <button onclick="getElementById('outputText').value=main(document.getElementById('inputText').value)">Przeanalizuj powyzszy tekst!</button>
+    <br/>
+    <br/>
+    <input type="text" id="outputText" style="width:50%" />
+</body>
+
+</html>
